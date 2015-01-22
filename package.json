@@ -1,0 +1,47 @@
+{
+  "name": "odatajs",
+  "version": "4.0.0",
+  "postfix": "beta-01",
+  "releaseCandidate": "",
+  "title": "Olingo OData Client for JavaScript",
+  "description": "the Olingo OData Client for JavaScript library is a new cross-browser JavaScript library that enables data-centric web applications by leveraging modern protocols such as JSON and OData and HTML5-enabled browser features. It's designed to be small, fast and easy to use.",
+  "homepage": "http://olingo.apache.org",
+  "main": "./odatajs/src/index-node.js",
+  "main-browser": "./odatajs/src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "http://git-wip-us.apache.org/repos/asf/olingo-odata4-js.git"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "contributors": [
+    {
+      "name": "Bing Li",
+      "email": "bingl@apache.org"
+    },
+    {
+      "name": "Sven Kobler-Morris",
+      "email": "koblers@apache.org"
+    },
+    {
+      "name": "Challen He",
+      "email": "challenh@apache.org"
+    }
+  ],
+  "scripts": {
+    "preinstall": "npm --prefix ./odatajs/grunt-config/custom-tasks/rat install"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-connect-proxy": "^0.1.10",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-compress": "^0.10.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-curl": "^2.0.2",
+    "grunt-jsdoc": "^0.5.6",
+    "grunt-nuget": "^0.1.3",
+    "xmldom": "^0.1.19"
+  }
+}
